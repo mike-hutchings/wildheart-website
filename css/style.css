@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffffff;
+  color: #454545;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 30px 50px;
+  line-height: 1.4;
+}
+
+a {
+  color: #07a;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.btn {
+  background-color: #463137;
+  color: #E1C2C3;
+  padding: 0.6rem 1.3rem;
+  text-decoration: none;
+  border: 0;
+  text-align: center;
+  width: 75%;
+}
+
+header {
+  margin: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  color: #8fc24e;
+  font-size: 1.8rem;
+}
+header nav ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+header nav a {
+  background-color: #463137;
+  color: #E1C2C3;
+  font-size: 1.1rem;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.8rem;
+  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+header nav a:hover {
+  background-color: #8fc24e;
+  color: #463137;
+}
+
+.articles {
+  padding: 1rem;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas: "showcase showcase top-box-a" "showcase showcase top-box-b";
+}
+
+.showcase {
+  color: #463137;
+  grid-area: showcase;
+  min-height: 450px;
+  background: url(../img/yoga.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+.showcase h1 {
+  font-size: 4rem;
+}
+.showcase p {
+  font-size: 1.3rem;
+}
+
+.top-box {
+  background-color: #8fc24e;
+  color: #463137;
+  padding: 1.5rem;
+  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.top-box .price {
+  font-size: 2.5rem;
+}
+
+.top-box-a {
+  grid-area: top-box-a;
+}
+
+.top-box-b {
+  grid-area: top-box-b;
+}
+
+.fb-page {
+  display: grid;
+  place-items: center;
+}
+
+footer {
+  background-color: #8fc24e;
+}
+footer address {
+  display: grid;
+  place-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */
