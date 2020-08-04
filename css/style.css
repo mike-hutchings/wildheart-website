@@ -134,6 +134,34 @@ main {
   font-size: 1.2rem;
 }
 
+.schedule {
+  padding: 1rem;
+  justify-content: center;
+  overflow-x: auto;
+}
+.schedule table {
+  background-color: #E1C2C3;
+  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  margin-left: auto;
+  margin-right: auto;
+  border-spacing: 4px;
+}
+.schedule table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.schedule table tr:nth-child(odd) {
+  background-color: #f2f2f2b9;
+}
+.schedule table tr td, .schedule table tr th {
+  text-align: center;
+  padding: 8px;
+}
+.schedule table tr th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #E1C2C3;
+}
+
 .fb-page {
   display: grid;
   place-items: center;
@@ -147,6 +175,22 @@ footer address {
   place-items: center;
 }
 
+@media (max-width: 767.98px) {
+  nav {
+    display: grid;
+    justify-content: initial;
+  }
+  nav .logo {
+    text-align: center;
+  }
+  nav ul {
+    width: 100%;
+  }
+
+  table {
+    font-size: 0.8rem;
+  }
+}
 @media (max-width: 575.98px) {
   nav {
     padding: 0.4rem 0rem;
@@ -165,17 +209,9 @@ footer address {
     display: flex;
     flex-direction: column;
   }
-}
-@media (max-width: 767.98px) {
-  nav {
-    display: grid;
-    justify-content: initial;
-  }
-  nav .logo {
-    text-align: center;
-  }
-  nav ul {
-    width: 100%;
+
+  table {
+    font-size: 0.6rem;
   }
 }
 
