@@ -75,6 +75,7 @@ main {
 }
 
 .showcase-section {
+  background-color: #C0C0C2;
   padding: 1rem;
   display: grid;
   grid-gap: 20px;
@@ -134,37 +135,54 @@ main {
   font-size: 1.2rem;
 }
 
-.schedule {
+.schedule-section {
+  background-color: #E1C2C3;
+  height: 500px;
   padding: 1rem;
+  display: flex;
+  place-items: center;
   justify-content: center;
   overflow-x: auto;
 }
-.schedule table {
+.schedule-section h2 {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2rem;
+  padding: 0px 8px;
+}
+.schedule-section table {
   background-color: #E1C2C3;
   box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
   margin-left: auto;
   margin-right: auto;
-  border-spacing: 4px;
+  border-spacing: 0px;
 }
-.schedule table tr:nth-child(even) {
+.schedule-section table tr:nth-child(even) {
   background-color: #f2f2f2;
 }
-.schedule table tr:nth-child(odd) {
+.schedule-section table tr:nth-child(odd) {
   background-color: #f2f2f2b9;
 }
-.schedule table tr td, .schedule table tr th {
+.schedule-section table tr th, .schedule-section table tr td {
   text-align: center;
-  padding: 8px;
+  padding: 8px 16px;
 }
-.schedule table tr th {
+.schedule-section table tr th {
   padding-top: 12px;
   padding-bottom: 12px;
-  background-color: #E1C2C3;
+  background-color: #463137;
+  color: #8fc24e;
+}
+.schedule-section table tr td {
+  line-height: 1.6rem;
 }
 
-.fb-page {
-  display: grid;
+.social-section {
+  display: flex;
   place-items: center;
+  justify-content: center;
+  height: 700px;
 }
 
 footer {
@@ -187,8 +205,19 @@ footer address {
     width: 100%;
   }
 
-  table {
+  .schedule-section {
+    flex-direction: column;
+  }
+  .schedule-section h2 {
+    width: 80%;
+    padding-bottom: 4rem;
+    font-size: 1.7rem;
+  }
+  .schedule-section table {
     font-size: 0.8rem;
+  }
+  .schedule-section table tr td {
+    line-height: 1.4rem;
   }
 }
 @media (max-width: 575.98px) {
@@ -210,8 +239,11 @@ footer address {
     flex-direction: column;
   }
 
-  table {
-    font-size: 0.6rem;
+  .schedule-section table {
+    font-size: 0.7rem;
+  }
+  .schedule-section table tr th, .schedule-section table tr td {
+    padding: 8px;
   }
 }
 
