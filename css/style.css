@@ -6,6 +6,7 @@
 
 html, body {
   overflow-x: hidden;
+  background-color: #C0C0C2;
 }
 
 body {
@@ -125,14 +126,26 @@ main {
   grid-area: top-box-b;
 }
 
-.articles article {
+.class-section {
+  background-color: #C0C0C2;
   padding: 1rem;
 }
-.articles article h1 {
+.class-section article {
+  background-color: #E1C2C3;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+.class-section article div h1 {
   font-size: 2rem;
 }
-.articles article p {
+.class-section article div p {
   font-size: 1.2rem;
+  padding-top: 0.4rem;
+}
+.class-section article img {
+  height: 250px;
 }
 
 .schedule-section {
@@ -179,10 +192,21 @@ main {
 }
 
 .social-section {
+  background-color: #A93F47;
+  height: 500px;
+  padding: 1rem;
   display: flex;
   place-items: center;
   justify-content: center;
-  height: 700px;
+  overflow-x: auto;
+}
+.social-section article {
+  padding: 1rem;
+  display: flex;
+  place-items: center;
+}
+.social-section article i {
+  padding-right: 1rem;
 }
 
 footer {
@@ -218,6 +242,13 @@ footer address {
   }
   .schedule-section table tr td {
     line-height: 1.4rem;
+  }
+
+  .social-section article {
+    flex-direction: column;
+  }
+  .social-section article h2 {
+    font-size: 1.4rem;
   }
 }
 @media (max-width: 575.98px) {
