@@ -6,7 +6,7 @@
 
 html, body {
   overflow-x: hidden;
-  background-color: #C0C0C2;
+  background-color: #EEEEEE;
 }
 
 body {
@@ -24,8 +24,8 @@ ul {
 }
 
 .btn {
-  background-color: #463137;
-  color: #E1C2C3;
+  background-color: #8D8741;
+  color: #FBEEC1;
   padding: 0.6rem 1.3rem;
   text-decoration: none;
   border: 0;
@@ -33,13 +33,12 @@ ul {
 }
 
 header {
-  background-color: #463137;
+  background-color: #D7D7D7;
 }
 
 nav {
   max-width: 1366px;
   margin: auto;
-  background-color: #463137;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -49,7 +48,7 @@ nav .logo {
   font-size: 1.8rem;
 }
 nav .logo a {
-  color: #8fc24e;
+  color: #659DBD;
   text-decoration: none;
 }
 nav ul {
@@ -58,7 +57,7 @@ nav ul {
   width: 40%;
 }
 nav ul li a {
-  color: #E1C2C3;
+  color: #659DBD;
   font-size: 1.1rem;
   text-decoration: none;
   letter-spacing: 3px;
@@ -66,17 +65,17 @@ nav ul li a {
   padding: 0.8rem;
 }
 nav ul li a:hover {
-  color: #8fc24e;
+  color: #8D8741;
 }
 
 main {
-  background-color: #ffffff;
+  background-color: #EEEEEE;
   max-width: 1366px;
   margin: auto;
 }
 
 .showcase-section {
-  background-color: #C0C0C2;
+  background-color: #EEEEEE;
   padding: 1rem;
   display: grid;
   grid-gap: 20px;
@@ -84,10 +83,10 @@ main {
 }
 
 .showcase {
-  color: #463137;
+  color: #8D8741;
   grid-area: showcase;
   min-height: 450px;
-  background: url(../img/yoga.jpg);
+  background: url(../img/yoga0.jpg);
   background-size: cover;
   background-position: center;
   padding: 3rem;
@@ -105,8 +104,8 @@ main {
 }
 
 .top-box {
-  background-color: #8fc24e;
-  color: #463137;
+  background-color: #659DBD;
+  color: #FBEEC1;
   padding: 1.5rem;
   box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
   display: flex;
@@ -127,17 +126,18 @@ main {
 }
 
 .class-section {
-  background-color: #C0C0C2;
+  background-color: #EEEEEE;
   padding: 1rem;
 }
 .class-section article {
-  background-color: #E1C2C3;
+  background-color: #D7D7D7;
   padding: 1rem;
   margin-bottom: 1rem;
   display: flex;
   box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 }
 .class-section article div h1 {
+  color: #8D8741;
   font-size: 2rem;
 }
 .class-section article div p {
@@ -149,7 +149,7 @@ main {
 }
 
 .schedule-section {
-  background-color: #E1C2C3;
+  background-color: #D7D7D7;
   height: 500px;
   padding: 1rem;
   display: flex;
@@ -165,7 +165,6 @@ main {
   padding: 0px 8px;
 }
 .schedule-section table {
-  background-color: #E1C2C3;
   box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
   margin-left: auto;
   margin-right: auto;
@@ -184,15 +183,15 @@ main {
 .schedule-section table tr th {
   padding-top: 12px;
   padding-bottom: 12px;
-  background-color: #463137;
-  color: #8fc24e;
+  background-color: #8D8741;
+  color: #FBEEC1;
 }
 .schedule-section table tr td {
   line-height: 1.6rem;
 }
 
 .social-section {
-  background-color: #A93F47;
+  background-color: #EEEEEE;
   height: 500px;
   padding: 1rem;
   display: flex;
@@ -200,21 +199,31 @@ main {
   justify-content: center;
   overflow-x: auto;
 }
-.social-section article {
+.social-section a {
+  text-decoration: none;
+}
+.social-section a article {
   padding: 1rem;
   display: flex;
   place-items: center;
 }
-.social-section article i {
+.social-section a article h2 {
+  color: #454545;
+}
+.social-section a article i {
+  color: #659DBD;
   padding-right: 1rem;
 }
 
 footer {
-  background-color: #8fc24e;
+  background-color: #D7D7D7;
 }
 footer address {
   display: grid;
   place-items: center;
+}
+footer address a {
+  text-decoration: none;
 }
 
 @media (max-width: 767.98px) {
