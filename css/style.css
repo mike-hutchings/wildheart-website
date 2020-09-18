@@ -147,7 +147,40 @@ main {
   padding-top: 0.4rem;
 }
 .class-section article img {
+  margin-left: 1rem;
   height: 250px;
+}
+
+.join-section {
+  background-color: #EEEEEE;
+  padding: 1rem;
+}
+.join-section article {
+  background-color: #D7D7D7;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  display: flex;
+  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+.join-section article div h1 {
+  color: #bbb033;
+  font-size: 2rem;
+}
+.join-section article div ol, .join-section article div p {
+  font-size: 1.2rem;
+  padding: 0.4rem 1rem;
+}
+.join-section article div ol li, .join-section article div p li {
+  padding-bottom: 1rem;
+}
+.join-section article div ol li a, .join-section article div p li a {
+  text-decoration: none;
+}
+.join-section article div img {
+  display: block;
+  margin: 1rem auto;
+  width: initial;
+  height: auto;
 }
 
 .schedule-section {
@@ -261,6 +294,25 @@ footer address a {
   }
   nav ul {
     width: 100%;
+  }
+
+  .class-section article {
+    flex-direction: column;
+  }
+  .class-section article img {
+    margin-top: 1rem;
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .join-section article {
+    display: flex;
+    flex-direction: column;
+  }
+  .join-section article img {
+    width: 100%;
+    height: auto;
   }
 
   .schedule-section {
