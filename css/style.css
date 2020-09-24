@@ -131,24 +131,26 @@ main {
   background-color: #EEEEEE;
   padding: 1rem;
 }
-.class-section article {
+.class-section article:nth-of-type(2n+0) {
   background-color: #D7D7D7;
+}
+.class-section article {
+  min-height: 400px;
   padding: 1rem;
   margin-bottom: 2rem;
   display: flex;
-  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 }
 .class-section article div h1 {
   color: #bbb033;
   font-size: 2rem;
 }
 .class-section article div p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   padding-top: 0.4rem;
 }
 .class-section article img {
   margin-left: 1rem;
-  height: 250px;
+  height: 500px;
 }
 
 .join-section {
@@ -156,25 +158,41 @@ main {
   padding: 1rem;
 }
 .join-section article {
-  background-color: #D7D7D7;
   padding: 1rem;
   margin-bottom: 2rem;
   display: flex;
-  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 }
 .join-section article div h1 {
   color: #bbb033;
   font-size: 2rem;
 }
-.join-section article div ol, .join-section article div p {
+.join-section article div p {
   font-size: 1.2rem;
-  padding: 0.4rem 1rem;
+  padding-top: 0.4rem;
 }
-.join-section article div ol li, .join-section article div p li {
-  padding-bottom: 1rem;
-}
-.join-section article div ol li a, .join-section article div p li a {
+.join-section article div a {
   text-decoration: none;
+}
+.join-section article div .sessions {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem 1rem 1rem;
+}
+.join-section article div .sessions .session {
+  background-color: #D7D7D7;
+  color: #454545;
+  padding: 1.5rem;
+  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 28%;
+}
+.join-section article div .sessions .session h4, .join-section article div .sessions .session .price {
+  color: #659DBD;
+}
+.join-section article div .sessions .session .price {
+  font-size: 2.5rem;
 }
 .join-section article div img {
   display: block;
@@ -309,6 +327,17 @@ footer address a {
   .join-section article {
     display: flex;
     flex-direction: column;
+  }
+  .join-section article div {
+    padding-bottom: 2rem;
+  }
+  .join-section article div .sessions {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+  }
+  .join-section article div p .email {
+    font-size: 1rem;
   }
   .join-section article img {
     width: 100%;
