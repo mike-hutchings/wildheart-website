@@ -129,7 +129,7 @@ main {
 
 .class-section {
   background-color: #EEEEEE;
-  padding: 1rem;
+  padding: 0;
 }
 .class-section article:nth-of-type(2n+0) {
   background-color: #D7D7D7;
@@ -155,7 +155,7 @@ main {
 
 .join-section {
   background-color: #EEEEEE;
-  padding: 1rem;
+  padding: 0;
 }
 .join-section article {
   padding: 1rem;
@@ -335,6 +335,9 @@ footer address a {
     display: flex;
     justify-content: space-between;
     padding: 1rem 0;
+  }
+  .join-section article div .sessions .session {
+    width: 32%;
   }
   .join-section article div p .email {
     font-size: 1rem;
