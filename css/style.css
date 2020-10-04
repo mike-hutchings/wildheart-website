@@ -220,6 +220,8 @@ main {
 .schedule-section div {
   margin-left: auto;
   margin-right: auto;
+  padding: 0;
+  margin: 0;
 }
 .schedule-section div table {
   box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
@@ -399,6 +401,10 @@ footer address a {
     flex-direction: column;
   }
 
+  .schedule-section {
+    padding-left: 0;
+    padding-right: 0;
+  }
   .schedule-section table {
     font-size: 0.7rem;
   }
