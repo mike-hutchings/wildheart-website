@@ -203,7 +203,7 @@ main {
 
 .schedule-section {
   background-color: #D7D7D7;
-  height: 550px;
+  height: 600px;
   padding: 1rem;
   display: flex;
   place-items: center;
@@ -221,7 +221,6 @@ main {
   margin-left: auto;
   margin-right: auto;
   padding: 0;
-  margin: 0;
 }
 .schedule-section div table {
   box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
