@@ -217,30 +217,38 @@ main {
   font-size: 2rem;
   padding: 0px 8px;
 }
-.schedule-section table {
-  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+.schedule-section div {
   margin-left: auto;
   margin-right: auto;
-  border-spacing: 0px;
 }
-.schedule-section table tr:nth-child(even) {
+.schedule-section div table {
+  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  border-spacing: 0px;
+  background-color: transparent;
+}
+.schedule-section div table tr:nth-child(even) {
   background-color: #f2f2f2;
 }
-.schedule-section table tr:nth-child(odd) {
+.schedule-section div table tr:nth-child(odd) {
   background-color: #f2f2f2b9;
 }
-.schedule-section table tr th, .schedule-section table tr td {
+.schedule-section div table tr th, .schedule-section div table tr td {
   text-align: center;
   padding: 8px 16px;
 }
-.schedule-section table tr th {
+.schedule-section div table tr th {
   padding-top: 12px;
   padding-bottom: 12px;
   background-color: #bbb033;
   color: #EEEEEE;
 }
-.schedule-section table tr td {
+.schedule-section div table tr td {
   line-height: 1.6rem;
+}
+.schedule-section div #schedule-note {
+  text-align: right;
+  padding: 1rem;
+  background-color: transparent;
 }
 
 .introduction-section {
