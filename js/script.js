@@ -1,5 +1,10 @@
+const table_title = document.querySelector("#table-title");
 const class_times1 = document.querySelector("#class-times1").childNodes;
 const class_times2 = document.querySelector("#class-times2").childNodes;
+
+const current_date = new Date();
+const month_year = `${current_date.toLocaleString('default', { month: 'long' })} ${current_date.getFullYear()}`;
+table_title.innerHTML = month_year;
 
 const schedule_rows = [class_times1, class_times2];
 
@@ -23,4 +28,4 @@ schedule_rows.forEach(class_times => {
       }
     }
   });
-}); 
+});
